@@ -244,16 +244,13 @@ section{padding:70px 0;}
 
 /* ---------- Dobra 8 - Depoimento ---------- */
 .depoimento{background:var(--verde-claro);}
-.print-placeholder{
-  max-width:340px;margin:0 auto;
-  background:#fff;border-radius:22px;padding:18px;box-shadow:var(--sombra);
-  border:2px dashed #b9c4ac;
+.depoimentos-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:18px;
+  max-width:1000px;margin:0 auto;
 }
-.print-placeholder .topo{display:flex;align-items:center;gap:10px;margin-bottom:14px;}
-.print-placeholder .avatar{width:38px;height:38px;border-radius:50%;background:#d9e6d2;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--verde);}
-.print-placeholder .nome{font-family:'Poppins',sans-serif;font-weight:700;font-size:.9rem;}
-.bolha{background:#dcf8c6;border-radius:12px 12px 12px 2px;padding:12px 14px;font-size:.85rem;color:#3a4a2e;margin-bottom:8px;}
-.print-placeholder .nota{text-align:center;color:#8a9a7a;font-size:.75rem;margin-top:10px;font-family:'Poppins',sans-serif;font-weight:600;}
+.depoimentos-grid img{
+  width:100%;border-radius:16px;box-shadow:var(--sombra);
+}
 
 /* ---------- Dobra 9 - Como funciona ---------- */
 .passos{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:10px;}
@@ -343,8 +340,10 @@ footer{background:#1a2e16;color:#a9b79e;text-align:center;padding:30px 20px;font
   .passos{grid-template-columns:1fr 1fr;row-gap:26px;}
   .planos-grid{grid-template-columns:1fr;}
   .plano.destaque{transform:none;}
+  .depoimentos-grid{grid-template-columns:1fr 1fr;}
 }
 @media(max-width:520px){
   .bonus-grid{grid-template-columns:1fr;}
   .passos{grid-template-columns:1fr;}
+  .depoimentos-grid{grid-template-columns:1fr;max-width:340px;}
 }
