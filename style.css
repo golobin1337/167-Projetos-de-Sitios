@@ -244,13 +244,11 @@ section{padding:70px 0;}
 
 /* ---------- Dobra 8 - Depoimento ---------- */
 .depoimento{background:var(--verde-claro);}
-.depoimentos-grid{
-  display:grid;grid-template-columns:repeat(4,1fr);gap:18px;
-  max-width:1000px;margin:0 auto;
+.depoimentos-carrossel-wrap{max-width:1000px;margin:20px auto 0;}
+.depoimentos-carrossel img{
+  width:230px;flex:0 0 auto;border-radius:16px;box-shadow:var(--sombra);
 }
-.depoimentos-grid img{
-  width:100%;border-radius:16px;box-shadow:var(--sombra);
-}
+.depoimentos-carrossel{animation-duration:28s;}
 
 /* ---------- Dobra 9 - Como funciona ---------- */
 .passos{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:10px;}
