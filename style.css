@@ -231,7 +231,7 @@ section{padding:70px 0;}
   border-top:4px solid var(--dourado);overflow:hidden;
 }
 .bonus-img{
-  display:block;width:calc(100% + 40px);
+  display:block;width:calc(100% + 40px);max-width:calc(100% + 40px);
   margin:-24px -20px 16px;
 }
 .bonus-tag{
