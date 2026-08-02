@@ -246,7 +246,8 @@ section{padding:70px 0;}
 .depoimento{background:var(--verde-claro);}
 .depoimentos-carrossel-wrap{max-width:1000px;margin:20px auto 0;}
 .depoimentos-carrossel img{
-  width:230px;flex:0 0 auto;border-radius:16px;box-shadow:var(--sombra);
+  width:230px;aspect-ratio:9/16;object-fit:cover;object-position:top;
+  flex:0 0 auto;border-radius:16px;
 }
 .depoimentos-carrossel{animation-duration:28s;}
 
