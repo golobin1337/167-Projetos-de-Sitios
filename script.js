@@ -1,6 +1,13 @@
 // ======= CONFIGURAÇÃO DE PRAZO DA OFERTA =======
-// Edite esta data para atualizar a barra de escassez e o contador do Plano Completo.
-const DATA_LIMITE = new Date("2026-08-01T23:59:59");
+// A oferta sempre expira ao final do dia atual do visitante (recalculado a cada carregamento).
+// Mude OFFSET_DIAS para dar mais dias de prazo (ex: 1 = expira amanhã).
+const OFFSET_DIAS = 0;
+const DATA_LIMITE = (() => {
+  const d = new Date();
+  d.setDate(d.getDate() + OFFSET_DIAS);
+  d.setHours(23, 59, 59, 999);
+  return d;
+})();
 
 function formatarDataLonga(d){
   return d.toLocaleDateString('pt-BR', { day:'2-digit', month:'long' });
